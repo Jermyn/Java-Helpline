@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Arrays;
 
 public class Question3
@@ -149,36 +147,3 @@ public class Question3
         System.out.println("0. Exit");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
