@@ -53,7 +53,7 @@ public class Question2
                 System.out.println(answer);
              
                 if ((tries<5) && (guess==1)) {
-                    System.out.println("Do you want spell the word now? (y/n): ");
+                    System.out.print("Do you want to spell the word now? (y/n): ");
                     spell = console.next().charAt(0);
                 }
             }
