@@ -67,8 +67,12 @@ public class Question3
 
     public static int search(String name, String[] staffNames, int count) 
     {
+        String lowerCase;
+        String upperCase;
         for (int index=0; index<count; index++) {
-            if (name.equals(staffNames[index]))
+            lowerCase = staffNames[index].substring(0,1).toLowerCase() + staffNames[index].substring(1);
+            upperCase = staffNames[index].substring(0,1).toUpperCase() + staffNames[index].substring(1);
+            if ((name.equals(staffNames[index])) || (name.equals(upperCase)) || (name.equals(lowerCase)))
                 return index;
         }
         return -1;
