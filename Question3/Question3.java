@@ -25,7 +25,7 @@ public class Question3
                         System.out.println("No more staff can be added.");
                     else {
                         scanOption.nextLine();
-                        System.out.print("Enter name of stuff to add: ");
+                        System.out.print("Enter name of staff to add: ");
                         String addedName = scanOption.nextLine();
                         System.out.print("Enter position code of staff to add (T, M, S or J): ");
                         code = scanOption.next().charAt(0);
