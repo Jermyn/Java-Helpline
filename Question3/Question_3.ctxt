@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Question_3
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=name\ staffNames\ count
+comment2.target=int\ search(java.lang.String,\ java.lang.String[],\ int)
+comment3.params=name\ positioncode\ staffNames\ staffPositionCode\ staffNumleaves\ count\ position\ numleaves
+comment3.target=int\ addStaff(java.lang.String,\ char,\ java.lang.String[],\ char[],\ int[],\ int,\ char[],\ int[])
+comment4.params=name\ staffNames\ staffPositionCode\ staffNumleaves\ count
+comment4.target=boolean\ removeStaff(java.lang.String,\ java.lang.String[],\ char[],\ int[],\ int)
+comment5.params=name\ numDays\ staffNames\ staffNumleaves\ count
+comment5.target=int\ takeLeave(java.lang.String,\ int,\ java.lang.String[],\ int[],\ int)
+comment6.params=staffNames\ staffNumleaves\ count
+comment6.target=void\ listStaffWithLeave(java.lang.String[],\ int[],\ int)
+comment7.params=
+comment7.target=void\ displayMenu()
+numComments=8
