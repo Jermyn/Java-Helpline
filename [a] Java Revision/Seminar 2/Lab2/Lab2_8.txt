@@ -1,0 +1,9 @@
+a) false
+b) true
+c) true
+d) false
+e) false (false && false will print false)
+f) false
+g) true
+h) true
+i) true

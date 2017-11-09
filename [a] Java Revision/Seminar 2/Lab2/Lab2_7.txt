@@ -1,0 +1,75 @@
+7a) Children below 10 and senior citizens above 60 years old are charged half price. All others full price.
+
+import java.util.Scanner;
+
+public class Lab2_7
+{
+    public static void main(String[] args)
+    {
+        Scanner input1 = new Scanner(System.in);
+        System.out.print("Enter age: ");
+        int age = input1.nextInt();
+        input1.nextLine();
+
+        Scanner input2 = new Scanner(System.in);
+        System.out.print("Enter price: ");
+        double price = input2.nextDouble();
+        input2.nextLine();
+
+        if (age <10 || age >60)
+        {
+            price /= 2;
+        }
+
+        System.out.println("Age is " + age);
+        System.out.printf("Price is $%.2f", price);
+    }
+}
+
+7b) Students with a score 80 and above will get distinction. Those with a score between 60 and 79 will get credit.
+
+import java.util.Scanner;
+
+public class Lab2_7
+{
+    public static void main(String[] args)
+    {
+        Scanner inputScore = new Scanner(System.in);
+        int score = inputScore.nextInt();
+        inputScore.nextLine();
+
+        if (score >= 80)
+        {
+            System.out.print("Distinction");
+        }
+        else if (score >=60)
+        {
+            System.out.print("Credit");
+        }
+        else
+        {
+            System.out.print("Normal");
+        }
+    }
+
+}
+
+7c) In quality control, all parts less than 7 mm long are rejected. So are those more than 9 mm long.
+
+int length;
+
+if (length < 7 || length > 9)
+{
+	System.out.println("Reject");
+}
+
+7d) BCB bank offers a special 6% interest rate for senior citizen aged over 60 with bank accounts that have a balance over $1000.
+
+int age;
+double bankBalance;
+
+if (age > 60 && bankBalance > 1000)
+{
+	bankBalance *= 1.06;
+	System.out.printf("The total balance in your bank is $%.2f.", bankBalance);
+}

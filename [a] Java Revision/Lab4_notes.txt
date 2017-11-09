@@ -1,0 +1,15 @@
+public static double max(double n1, double n2, double n3, double n4)
+{
+	return max(max(n1, n2, n3),n4);
+}
+
+
+public static double max(double n1, double n2, double n3, double n4)
+{
+	max_2 = max(n1,n2);
+	max_3 = max(max_2, n3);
+	max_4 = max(max_3, n4);
+	return max_4;
+
+	// return max(max(max(n1,n2),n3),n4);
+}

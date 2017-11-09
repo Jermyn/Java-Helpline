@@ -1,0 +1,91 @@
+class Staff {
+
+	private String staffName;
+	private char staffCode;
+	private int balanceLeave;
+	private boolean canExchange;
+
+	//default constructor
+	public Staff(String name, int numLeave)
+	{
+		this(name, 'J', numLeave, false);
+	}
+
+
+	public Staff(String name, char code, int numLeave, boolean ableToExchange)
+	{
+		staffName = name;
+		staffCode = code;
+		balanceLeave = numLeave;
+		canExchange = ableToExchange;
+	}
+
+	public int getBalanceLeave() {
+		return balanceLeave;
+	}
+
+	public char getStaffCode() {
+		return staffCode;
+	}
+
+	public boolean getCanExchanged() {
+		return canExchange;
+	}
+
+	public void setBalanceLeave(int newBalanceLeave) {
+		balanceLeave = newBalanceLeave;
+	}
+
+	public void setStaffCode(char newStaffCode) {
+		staffCode = newStaffCode;
+	}
+
+	public void changeIsAllowedMoneyExchanged() {
+		canExchange = !canExchange;
+	}
+
+	private boolean hasLeave() {
+		if (balanceLeave>0)
+			return true;
+		else
+			return false;
+
+		// switch(balanceLeave) {
+		// 	case 0: return false;
+		// 			break;
+		// 	default: return true;
+		// }
+	}
+
+	private double computeLeaveToMoney(double rate) {
+		double amtMoney;
+		if (canExchange!= false) {
+			amtMoney = rate*balanceLeave;
+			return amtMoney;
+		}
+		else
+			return -1;
+	}
+
+	private int compareTo(Staff firstStaff, int staffLeave) {
+		if (staffLeave>firstStaff.balanceLeave)
+			return 1;
+		else if (staffLeave<firstStaff.balanceLeave)
+			return -1;
+		else
+			return 0;
+	}
+
+	public String toString() {
+		double moneyConvertedFromLeave;
+		String description;
+		if (canExchange==true) {
+			moneyConvertedFromLeave = computeLeaveToMoney(112.50);
+			description = "The amount of money " + staffName + " converted from his " + balanceLeave + " day(s) of leave is $" + moneyConvertedFromLeave;
+		}
+		else
+			description = staffName + "is not allowed to exchange leave to money.";
+		return description;
+	}
+
+}

@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Staff
+comment1.params=name\ numLeave
+comment1.target=Staff(java.lang.String,\ int)
+comment10.params=rate
+comment10.target=double\ computeLeaveToMoney(double)
+comment11.params=firstStaff\ staffLeave
+comment11.target=int\ compareTo(Staff,\ int)
+comment12.params=
+comment12.target=java.lang.String\ toString()
+comment2.params=name\ code\ numLeave\ ableToExchange
+comment2.target=Staff(java.lang.String,\ char,\ int,\ boolean)
+comment3.params=
+comment3.target=int\ getBalanceLeave()
+comment4.params=
+comment4.target=char\ getStaffCode()
+comment5.params=
+comment5.target=boolean\ getCanExchanged()
+comment6.params=newBalanceLeave
+comment6.target=void\ setBalanceLeave(int)
+comment7.params=newStaffCode
+comment7.target=void\ setStaffCode(char)
+comment8.params=
+comment8.target=void\ changeIsAllowedMoneyExchanged()
+comment9.params=
+comment9.target=boolean\ hasLeave()
+numComments=13
